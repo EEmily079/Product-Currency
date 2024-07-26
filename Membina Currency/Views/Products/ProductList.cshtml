@@ -4,13 +4,13 @@
 @{
 }
 <h1>Product List</h1>
-<div class="container">
-    <div class="row">
+
         @foreach (var product in Model)
         {
-           
+            <div class="container">
+        <div class="row" style="margin-bottom: 10px;">
                     <div class="col">
-                        <img src="@product.ProductImageURL" class="img-fluid" alt="Responsive image">
+                        <img src="@product.ProductImageURL" class="img-fluid" alt="Responsive image" width="400px ">
                     </div>
                     <div class="col">
                         <table class="table">
@@ -43,11 +43,11 @@
                             </tbody>
                         </table>
                        </div>
-                            <a href="Products/View/@product.Id">View</a>
-           
-        }
+
+        </div>
     </div>
-</div>
+        }
+    
 
 
 

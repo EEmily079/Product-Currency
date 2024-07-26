@@ -1,0 +1,20 @@
+﻿@model Membina_Currency.Models.UpdateCurrencyViewModel
+@{
+}
+
+<h1>View Currency</h1>
+<form method="post" action="Add" class="mb-5">
+    <div class="mb-3">
+        <label for="" class=" = " form-label">ID</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class=" = " form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class=" = " form-label">Rate</label>
+        <input type="number" class="form-control" asp-for="Rate">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

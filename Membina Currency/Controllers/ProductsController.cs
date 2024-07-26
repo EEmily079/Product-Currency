@@ -25,6 +25,36 @@ namespace Membina_Currency.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public async Task<IActionResult> ProductList()
+        {
+            List<UpdateProductViewModel> productList = new List<UpdateProductViewModel>();
+
+            var products = await membinaCurrencyDbContext.Products.ToListAsync();
+            var mmkRate = await GetCurrencyRateAsync("MMK");
+            var thbRate = await GetCurrencyRateAsync("THB");
+
+            foreach (Product p in products)
+            {
+                var viewModel = new UpdateProductViewModel()
+                {
+                    Category = p.Category,
+                    BrandName = p.BrandName,
+                    ProductSeriesName = p.ProductSeriesName,
+                    ProductName = p.ProductName,
+                    Size = p.Size,
+                    ProductDescription = p.ProductDescription,
+                    ProductImageURL = p.ProductImageURL,
+                    SgdPrice = p.SgdPrice,
+                    MmkPrice = p.SgdPrice * mmkRate,
+                    ThbPrice = p.SgdPrice * thbRate
+                };
+                productList.Add(viewModel);
+            }
+
+            return View(productList);
+        }
+        
 
         [HttpPost]
         public async Task<IActionResult> Add(AddProductViewModel addProductRequest)

@@ -43,6 +43,39 @@ namespace Membina_Currency.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> View(Guid id)
+        {
+            var currency = await membinaCurrencyDbContext.Currencies.FirstOrDefaultAsync(x => x.Id == id);
+            if (currency != null)
+            {
+                var viewModel = new UpdateCurrencyViewModel()
+                {
+                    Id = currency.Id,
+                    Name = currency.Name,
+                    Rate = currency.Rate               
+                };
+                return await Task.Run(() => View("View", viewModel));
+            }
+            return RedirectToAction("Index");
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> View(UpdateCurrencyViewModel model)
+        {
+            var currency = await membinaCurrencyDbContext.Currencies.FindAsync(model.Id);
+            if (currency != null)
+            {
+                currency.Name = model.Name;
+                currency.Rate = model.Rate;
+               
+                await membinaCurrencyDbContext.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+
+            return RedirectToAction("Index");
+        }
     }
+
 }
+

@@ -8,6 +8,209 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Membina_Currency.styles.css" asp-append-version="true" />
 </head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    margin-top: 100px; /* Add top margin to container to avoid overlap with fixed navbar */
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.label{
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+.col-2{
+    flex-basis: 50%;
+    max-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 0px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px 0;
+}
+.btn{
+    display: inline-block;
+    background: lightblue;
+    color: #080808;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: #0565be;
+}
+.header{
+    background: radial-gradient(#fff,#cae2f5);
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis:30% ;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width:100%;
+    height: 150px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right:25px;
+
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform(0.5s);
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    padding-top: 100px;
+    text-align: center;
+    margin:70px auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+.title::after{
+    content:'';
+    background:#555;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%)
+}
+.hover-grow {
+    transition: font-size 0.5s;
+}
+
+.hover-grow:hover {
+    font-size: 1.5em; /* Adjust the size as needed */
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.col-5{
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform(0.5s);
+
+}
+.col-5 img{
+    width: 100%;
+}
+.dyson-haircare{
+    background: radial-gradient(#ce3939,#207dc9);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.price-converter {
+    margin: 20px;
+}
+.price-converter input {
+    margin-bottom: 10px;
+    display: block;
+}
+.item {
+    margin: 10px 0;
+}
+
+/* --------------footer--------- */
+.footer {
+  
+    background: black; /* Adjust the background color if needed */
+    color: rgb(221, 219, 219); /* Set the font color to white */
+    font-size: 14px;
+    padding:10px 0 10px;
+}
+.footer-row{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top:0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+#brandList {
+    /* display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.3s ease-out;
+    background-color: lightblue; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+    }
+#brandList li {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.image-container {
+    padding-top: 250px;
+    text-align: center;
+}
+
+</style>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -26,7 +229,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Product List</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="ProductList">Product List</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Add">Add Product</a>
@@ -49,8 +252,42 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Membina_Currency - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="footer">
+            &copy; 2024 - Membina_Currency
+            <div class="footer-row">
+                <div style="padding-bottom: 10px;">
+                    <h5>
+                        မြရည်နန္ဒာအိမ်ယာ | မမ 28, တိုက် 30 |
+                        အခန်း 5, 45 x 118 (C) ဒေါင့်
+                        MANDALAY
+                    </h5>
+                    <h5>Phone - 09785096113 </h5>
+                </div>
+                <div>
+                    <p>
+                        Follow us
+                        <a href="https://www.facebook.com/yoursconfidante">
+                            <img src="images/FBicon.webp" height="25px" width="25px">
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Call us
+                        <a href="tel:+959785096113">
+                            <img src="images/phCall.png" height="25px" width="25px">
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Chat with us
+                        <a href="viber://chat?number=+959785096113">
+                            <img src="images/viberIcon.png" height="30px" width="30px">
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

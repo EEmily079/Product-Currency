@@ -1,6 +1,7 @@
 ﻿@model List<Membina_Currency.Models.Domain.Currency>
 
 @{
+
 }
 <h1>Currencies List</h1>
 <table class="table">
@@ -9,6 +10,7 @@
             <th>Id</th>
             <th>Currency Name</th>
             <th>Rate</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +20,7 @@
                 <td>@curr.Id</td>
                 <td>@curr.Name</td>
                 <td>@curr.Rate</td>
+                <td><a href="Currencies/View/@curr.Id">View</a></td>
                
             </tr>
         }
