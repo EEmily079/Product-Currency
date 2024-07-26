@@ -1,0 +1,35 @@
+﻿@model List<Membina_Currency.Models.Domain.Product>
+
+@{
+}
+<h1>Product List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Brand Name</th>
+            <th>Product Series Name</th>
+            <th>Product Name</th>
+            <th>Size</th>
+            <th>SgdPrice</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.BrandName</td>
+                <td>@product.ProductSeriesName</td>
+                <td>@product.ProductName</td>
+                <td>@product.Size</td>
+                <td>@product.SgdPrice</td>
+                <td><a href="Products/View/@product.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table> 
+
+

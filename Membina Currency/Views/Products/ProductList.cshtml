@@ -1,0 +1,55 @@
+﻿@model List<Membina_Currency.Models.UpdateProductViewModel>
+@using System.Globalization;
+
+@{
+}
+<h1>Product List</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var product in Model)
+        {
+           
+                    <div class="col">
+                        <img src="@product.ProductImageURL" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>@product.BrandName</th>
+                                    <td>@product.ProductName</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Product Description</th>
+                                    <td>@product.ProductDescription</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>@product.Size</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SGD Price</th>
+                                    <td>@product.SgdPrice SGD</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MMK Price</th>
+                                    <td>@product.MmkPrice.ToString("N0", CultureInfo.InvariantCulture) Kyats</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">THB Price</th>
+                                    <td>@product.ThbPrice.ToString("N0", CultureInfo.InvariantCulture) B</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       </div>
+                            <a href="Products/View/@product.Id">View</a>
+           
+        }
+    </div>
+</div>
+
+
+
+
+

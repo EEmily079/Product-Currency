@@ -1,0 +1,66 @@
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\appsettings.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.staticwebassets.runtime.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.exe
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.deps.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.runtimeconfig.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Membina Currency.pdb
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Humanizer.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.csproj.AssemblyReference.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.AssemblyInfoInputs.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.AssemblyInfo.cs
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.csproj.CoreCompileInputs.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.RazorAssemblyInfo.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.RazorAssemblyInfo.cs
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets\msbuild.Membina Currency.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets\msbuild.build.Membina Currency.props
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Membina Currency.props
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Membina Currency.props
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\scopedcss\bundle\Membina Currency.styles.css
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\scopedcss\projectbundle\Membina Currency.bundle.scp.css
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.csproj.CopyComplete
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\refint\Membina Currency.dll
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.pdb
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\Membina Currency.genruntimeconfig.cache
+C:\Users\65972\Desktop\Membina Currency\Membina Currency\obj\Debug\net6.0\ref\Membina Currency.dll

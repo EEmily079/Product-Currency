@@ -1,0 +1,45 @@
+﻿@model Membina_Currency.Models.UpdateProductViewModel
+@using System.Globalization;
+
+@{
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="@Model.ProductImageURL" class="img-fluid" alt="Responsive image">
+
+        </div>
+        <div class="col">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>@Model.BrandName</th>
+                        <td>@Model.ProductName</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Product Description</th>
+                        <td>@Model.ProductDescription</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Size</th>
+                        <td>@Model.Size</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SGD Price</th> 
+                        <td>@Model.SgdPrice SGD</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MMK Price</th>
+                        <td>@Model.MmkPrice.ToString("N0", CultureInfo.InvariantCulture) Kyats</td>
+                       
+                    </tr>
+                    <tr>
+                        <th scope="row">THB Price</th>
+                        <td>@Model.ThbPrice.ToString("N0", CultureInfo.InvariantCulture) B</td>
+                    </tr>
+            </table>
+
+        </div>
+    </div>
+</div>

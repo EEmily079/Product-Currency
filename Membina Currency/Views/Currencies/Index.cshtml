@@ -1,0 +1,27 @@
+﻿@model List<Membina_Currency.Models.Domain.Currency>
+
+@{
+}
+<h1>Currencies List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Currency Name</th>
+            <th>Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var curr in Model)
+        {
+            <tr>
+                <td>@curr.Id</td>
+                <td>@curr.Name</td>
+                <td>@curr.Rate</td>
+               
+            </tr>
+        }
+    </tbody>
+</table> 
+
+
