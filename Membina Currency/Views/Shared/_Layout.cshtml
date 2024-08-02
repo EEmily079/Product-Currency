@@ -9,28 +9,13 @@
     <link rel="stylesheet" href="~/Membina_Currency.styles.css" asp-append-version="true" />
 </head>
 <style>
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: "Poppins", sans-serif;;
-}
-a{
-    text-decoration: none;
-    color: #555;
-}
-p{
-    color: #555;
-}
 .container{
-    margin-top: 100px; /* Add top margin to container to avoid overlap with fixed navbar */
+    margin-top: 250px; /* Add top margin to container to avoid overlap with fixed navbar */
     max-width: 1300px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+        
 
 }
 .row{
@@ -71,12 +56,6 @@ p{
 }
 .btn:hover{
     background: #0565be;
-}
-.header{
-    background: radial-gradient(#fff,#cae2f5);
-}
-.header .row{
-    margin-top: 70px;
 }
 .categories{
     margin: 70px 0;
@@ -136,32 +115,7 @@ p{
 .col-4:hover{
     transform: translateY(-5px);
 }
-.col-5{
-    flex-basis: 20%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform(0.5s);
 
-}
-.col-5 img{
-    width: 100%;
-}
-.dyson-haircare{
-    background: radial-gradient(#ce3939,#207dc9);
-    margin-top: 80px;
-    padding: 30px 0;
-}
-.price-converter {
-    margin: 20px;
-}
-.price-converter input {
-    margin-bottom: 10px;
-    display: block;
-}
-.item {
-    margin: 10px 0;
-}
 
 /* --------------footer--------- */
 .footer {
@@ -180,42 +134,16 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-
-
-#brandList {
-    /* display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    max-height: 0px;
-    transition: max-height 0.3s ease-out;
-    background-color: lightblue; */
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-out;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  
-    }
-#brandList li {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-}
-.image-container {
-    padding-top: 250px;
-    text-align: center;
-}
-
 </style>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 position-fixed">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Membina_Currency</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <div class="logo">
+                        <img src="https://www.membinaskincare.com/images/Logo.png" width="150px">
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -224,9 +152,6 @@ p{
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="ProductList">Product List</a>
@@ -248,12 +173,13 @@ p{
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="footer">
-            &copy; 2024 - Membina_Currency
+           
             <div class="footer-row">
                 <div style="padding-bottom: 10px;">
                     <h5>
@@ -262,12 +188,13 @@ p{
                         MANDALAY
                     </h5>
                     <h5>Phone - 09785096113 </h5>
+                    &copy; 2024 - Membina_Currency
                 </div>
                 <div>
                     <p>
                         Follow us
                         <a href="https://www.facebook.com/yoursconfidante">
-                            <img src="images/FBicon.webp" height="25px" width="25px">
+                            <img src="https://www.membinaskincare.com/images/FBicon.webp" height="25px" width="25px">
                         </a>
                     </p>
                 </div>
@@ -275,7 +202,7 @@ p{
                     <p>
                         Call us
                         <a href="tel:+959785096113">
-                            <img src="images/phCall.png" height="25px" width="25px">
+                            <img src="https://www.membinaskincare.com/images/phCall.png" height="25px" width="25px">
                         </a>
                     </p>
                 </div>
@@ -283,11 +210,12 @@ p{
                     <p>
                         Chat with us
                         <a href="viber://chat?number=+959785096113">
-                            <img src="images/viberIcon.png" height="30px" width="30px">
+                            <img src="https://www.membinaskincare.com/images/viberIcon.png" height="30px" width="30px">
                         </a>
                     </p>
                 </div>
             </div>
+           
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

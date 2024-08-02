@@ -1,57 +1,43 @@
-﻿@model Membina_Currency.Models.AddProductViewModel
+﻿@model Membina_Currency.Models.UpdateProductViewModel
 @{
-
 }
-<script>
-    window.onload = function () {
-        var errorMessage = '@TempData["ErrorMessage"]';
-        if (errorMessage) {
-            alert(errorMessage);
-        }
-    };
-</script>
-<h1>Add New Product</h1>
-    <form method="post" action="Add" style="margin-top:50px">
+<h1>Update Product</h1>
+<form asp-action="Update" asp-controller="Products" method="post" class="mb-5">
+    <div class="mb-3">
+        <label for="" class=" = " form-label">ID</label>
+        <input type="hidden" class="form-control" asp-for="Id" readonly>
+    </div>
     <div class="mb-3">
         <label for="" class=" = " form-label">Category</label>
         <input type="text" class="form-control" asp-for="Category">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">Brand Name</label>
         <input type="text" class="form-control" asp-for="BrandName">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">Product Series Name</label>
         <input type="text" class="form-control" asp-for="ProductSeriesName">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">Product Name</label>
         <input type="text" class="form-control" asp-for="ProductName">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">Size</label>
         <input type="text" class="form-control" asp-for="Size">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">Product Description</label>
         <input type="text" class="form-control" asp-for="ProductDescription">
     </div>
-
     <div class="mb-3">
-        <label for="" class=" = " form-label">Product ImageURL</label>
+        <label for="" class=" = " form-label">Product Image URL</label>
         <input type="text" class="form-control" asp-for="ProductImageURL">
     </div>
-
     <div class="mb-3">
         <label for="" class=" = " form-label">SGD Price</label>
         <input type="number" class="form-control" asp-for="SgdPrice">
     </div>
-
-
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Update</button>
 </form>

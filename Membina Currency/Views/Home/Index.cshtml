@@ -11,16 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!------------------header ------------>
-    <div class="header">
-        <div class="container">
+    <div class="container" style="background: radial-gradient(#fff,#cae2f5);">
             <div class="row">
                 <div class="col-2">
                     <h2>We offer authentic and quality products from world wide.</h2>
                     <p>
-                        Membina မှာ Singapore နိုင်ငံ ကတဆင့် တင်သွင်းတဲ့ World Wide Skincare Brand
+                        Membina မှာ Singapore နိုင်ငံ က တဆင့် တင်သွင်းတဲ့ World Wide Skincare Brand
                         မျိုးစုံကို ပစ္စည်း စစ်မှန်မှု ၁၀၀% အာမခံ အပြင် စျေးနှုန်း မှန်ကန်မှုကိုလဲ ထပ်တူညီမျှ အာမခံပြီး ရောင်းချပေးပါတယ်…
                     </p>
                     <a href="viber://chat?number=+6597242807" class="btn">Chat with us on Viber &#8594;</a>
@@ -30,26 +30,25 @@
                 </div>
             </div>
         </div>
-    </div>
     <!-------------featured categories---------->
     <div class="categories">
         <div class="small-container">
             <h2 class="title">Category</h2>
             <div class="row">
                 <div class="col-3">
-                    <a href="haircare.html">
+                    <a asp-controller="Products" asp-action="ProductList">
                         <img src="https://www.membinaskincare.com/images/HairCare.jpg">
                         <h3 class="hover-grow">Hair Care</h3>
                     </a>
                 </div>
                 <div class="col-3">
-                    <a href="skincare.html">
+                    <a asp-controller="Products" asp-action="ProductList">
                         <img src="https://www.membinaskincare.com/images/FaceCare.jpg" alt="">
                         <h3 class="hover-grow">Skin Care</h3>
                     </a>
                 </div>
                 <div class="col-3">
-                    <a href="bodycare.html">
+                    <a asp-controller="Products" asp-action="ProductList">
                         <img src="https://www.membinaskincare.com/images/BodyCare.jpg" alt="">
                         <h3 class="hover-grow">Body Care</h3>
                     </a>
@@ -62,53 +61,53 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <a href="dyson.html">
-                    <img src="images/DysonAWJisoo.jfif">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/DysonAWJisoo.jfif">
                     <h4>Dyson</h4>
                 </a>
             </div>
             <div class="col-4">
-                <a href="esteelauder.html">
-                    <img src="images/Estee Lauder.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/Estee%20Lauder.jpg">
                     <h4>Estee Lauder</h4>
                 </a>
             </div>
             <div class="col-4">
-                <a href="lancome.html">
-                    <img src="images/Lancome.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/Lancome.jpg">
                     <h4>Lancome</h4>
                 </a>
             </div>
             <div class="col-4">
-                <a href="eucerin.html">
-                    <img src="images/Eucerin.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/Eucerin.jpg">
                     <h4>Eucerin</h4>
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col-4">
-                <a href="kerastase.html">
-                    <img src="images/Kerastase.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/Kerastase.jpg">
                     <h4>Kerastase</h4>
                 </a>
             </div>
             <div class="col-4">
-                <a href="sk2.html">
-                    <img src="images/SK2.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/SK2.jpg">
                     <h4>SK2</h4>
                 </a>
             </div>
 
             <div class="col-4">
-                <a href="otherSkincare.html">
-                    <img src="images/Shiseido.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/Shiseido.jpg">
                     <h4>Shiseido</h4>
                 </a>
             </div>
             <div class="col-4">
-                <a href="otherHaircare.html">
-                    <img src="images/MoroccanOil.jpg">
+                <a asp-controller="Products" asp-action="ProductList">
+                    <img src="https://www.membinaskincare.com/images/MoroccanOil.jpg">
                     <h4>Moroccan Oil</h4>
                 </a>
             </div>

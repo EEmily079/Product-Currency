@@ -10,7 +10,7 @@
             <div class="container">
         <div class="row" style="margin-bottom: 10px;">
                     <div class="col">
-                        <img src="@product.ProductImageURL" class="img-fluid" alt="Responsive image" width="400px ">
+                        <img src="@product.ProductImageURL" class="img-fluid" alt="Responsive image" width="350px" height = "350px">
                     </div>
                     <div class="col">
                         <table class="table">
@@ -40,12 +40,34 @@
                                     <th scope="row">THB Price</th>
                                     <td>@product.ThbPrice.ToString("N0", CultureInfo.InvariantCulture) B</td>
                                 </tr>
+                                <tr>
+                                    <th></th>
+                                    <td><a href="@Url.Action("Update", new { id = product.Id })">Update</a>
+                                <form asp-action="Delete" method="post" asp-controller="Products" style="display:inline;" onsubmit="return confirmDelete();">
+                                    <input type="hidden" name="id" value="@product.Id" />
+                                    <button type="submit" class="btn-danger" style="margin-left:10px">
+                                        Delete
+                                    </button>
+                                </form>
+                                
+                                </td>
+                                </tr>
+                             
                             </tbody>
                         </table>
                        </div>
 
         </div>
     </div>
+    }
+
+    @section Scripts {
+    <script>
+        function confirmDelete() {
+            return confirm(`Are you sure you want to delete this product?`);
+        }
+    </script>
+
         }
     
 

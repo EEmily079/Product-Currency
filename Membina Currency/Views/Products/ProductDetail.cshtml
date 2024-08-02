@@ -38,6 +38,10 @@
                         <th scope="row">THB Price</th>
                         <td>@Model.ThbPrice.ToString("N0", CultureInfo.InvariantCulture) B</td>
                     </tr>
+                    <tr>
+                        <th></th>
+                       <td><a href="@Url.Action("Update", new { id = Model.Id })">Update</a></td>
+                    </tr>
             </table>
 
         </div>
